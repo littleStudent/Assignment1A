@@ -1,3 +1,0 @@
-INDEX VERSION 1.126+/Users/thomassattlecker/Documents/Development/Uni/VerteilteSysteme/Assignment1A/.metadata/.plugins/org.eclipse.jdt.core
-3390097526.index
-2287141722.index
