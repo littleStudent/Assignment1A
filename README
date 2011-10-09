@@ -1,0 +1,13 @@
+Part A
+
+Important: This part of the assignment is due to 13.10.2011 18:00 CET. and is mandatory for the registration process (i.e., if you do not solve this part in time, you cannot continue with the course!).
+
+Part A represents a simple task to verify your basic Java programming and networking knowledge, which is prerequisite for this course. Basically, all you have to do is log into our registration server running on host stockholm.vitalab.tuwien.ac.at at TCP port 9000 (see explanation of the login command). Therefore, use your dslab account number (e.g., dslab123) and initial password that you have received via email after the registration. If you have lost your initial password, you can request it from the DSG Teaching Tool.
+
+This task can be solved in several ways. However, we recommend that you implement a rudimentary client because you need to implement this client for the rest of Lab 1 anyway. Since logging in requires only TCP connections with the server, the UDP communication is not required for Part A. Please also note that any further functionality than logging in is disabled on the registration server.
+
+Send your request as a simple String. After a successful log in, the server will respond with "Successfully logged in" and "Registration complete" messages on the TCP connection after some seconds. Then, you are now finally registered for the course and will be rewarded 3 points. Please verify this in the DSG Teaching Tool - you are not registered unless you have received the 3 points for Part A in the tool!
+
+In case the server sends the "Registration complete" message and you do not receive 3 points, please contact us per email!
+
+It should be noted that you do not have to submit your solution for Part A in the DSG Teaching Tool (as necessary in the other labs). You just have to implement and invoke your client so that you can login to the registration server.
