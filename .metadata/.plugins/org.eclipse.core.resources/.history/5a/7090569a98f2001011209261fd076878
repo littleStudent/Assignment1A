@@ -1,0 +1,43 @@
+package com.dslab.client;
+
+import java.io.IOException;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class Client {
+
+	private static String schedulerHost;
+	private static int schedulerTCPPort;
+	private static String taskDir;
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		if (args.length != 3)
+	      {
+	         System.err.println("Usage: java Client <schedulerHost> <schedulerTCPPort> <taskDir>");
+	         System.exit(1);
+	      }
+		else {
+			schedulerHost = args[0];
+			schedulerTCPPort = Integer.parseInt(args[1]);
+			taskDir = args[2];
+		}
+		try {
+			startClient();
+		} catch (UnknownHostException e) {
+			System.err.println("Couldnt reach host.");
+	         System.exit(1);
+		} catch (IOException e) {
+			System.err.println("IOException");
+	         System.exit(1);
+		}
+	}
+	
+	private static void startClient() throws UnknownHostException, IOException {
+		Socket clientSocket = new Socket(schedulerHost, 9000);
+	}
+
+}

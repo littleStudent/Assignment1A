@@ -1,0 +1,26 @@
+package com.dslab.client;
+
+public class Client {
+
+	static String schedulerHost;
+	static int port;
+	static String taskDir;
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		if (args.length != 3)
+	      {
+	         System.err.println("Usage: java Client <schedulerHost> <schedulerTCPPort> <taskDir>");
+	         System.exit(1);
+	      }
+		startClient();
+	}
+	
+	private static void startClient() {
+		
+	}
+
+}
